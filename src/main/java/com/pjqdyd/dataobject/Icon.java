@@ -7,17 +7,20 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * 轮播图(对应数据库的类)
+ * 图标对应数据库的类
  */
 @Entity
 @Data
-public class Swiper {
-
+public class Icon {
     @Id
     @Column(unique = true)
     private String Id;
 
+    @Column(length = 32)
+    private String iconDesc;
+
     @Column(length = 256)
     private String imgUrl;
+
 
 }
