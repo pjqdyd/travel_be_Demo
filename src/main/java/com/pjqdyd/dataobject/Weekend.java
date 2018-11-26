@@ -1,5 +1,6 @@
 package com.pjqdyd.dataobject;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -21,6 +22,7 @@ public class Weekend {
     private String title;
 
     @Column(length = 128)
+    @JsonProperty("desc")
     private String weekendDesc;
 
     @Column(length = 256)

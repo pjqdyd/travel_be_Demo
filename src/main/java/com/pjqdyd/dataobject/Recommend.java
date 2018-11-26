@@ -1,5 +1,6 @@
 package com.pjqdyd.dataobject;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -21,6 +22,7 @@ public class Recommend {
     private String title;
 
     @Column(length = 128)
+    @JsonProperty("desc")
     private String recoDesc;
 
     @Column(length = 256)
