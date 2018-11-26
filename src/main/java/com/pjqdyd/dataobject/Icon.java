@@ -1,5 +1,6 @@
 package com.pjqdyd.dataobject;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -17,6 +18,7 @@ public class Icon {
     private String Id;
 
     @Column(length = 32)
+    @JsonProperty("desc")
     private String iconDesc;
 
     @Column(length = 256)
