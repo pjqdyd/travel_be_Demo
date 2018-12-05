@@ -10,6 +10,7 @@ import com.pjqdyd.service.RecommendService;
 import com.pjqdyd.service.SwiperService;
 import com.pjqdyd.service.WeekendService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,6 +22,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/travel")
+//@CrossOrigin 该接口可以跨域访问
 public class HomeController {
     @Autowired
     private IconService iconService;
